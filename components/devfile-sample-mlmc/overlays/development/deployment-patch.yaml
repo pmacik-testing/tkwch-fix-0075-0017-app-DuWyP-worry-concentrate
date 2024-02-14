@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-mlmc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0017-tenant/tkwch-fix-0075-0017-app/devfile-sample-mlmc@sha256:bfd76d73faeccbd53b965b61afe6ec34868415bae8dbc0b02c34ca83cb8f8d9a
+        name: my-nodejs
+        resources: {}
+status: {}
